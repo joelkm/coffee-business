@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    width: 100vw;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+    img{
+        height: 40px;
+    }
+    ul{
+        list-style: none;
+        li{
+            display: inline-block;
+            padding: 0px 1vw;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
