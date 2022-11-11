@@ -5,25 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="src/logo.png">
-    <title>ÇA PASSE CRÈME</title>
+    <title>ÇA PASSE CRÈME !</title>
     <script defer type="text/javascript" src="main.js"></script>
+    <script src="https://kit.fontawesome.com/b7d5dc159b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/js/splide.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="src/logo.png" alt="Home">
-        <h1>ÇA PASSE CRÈME</h1>
+        <div>
+            <img src="src/logo.png" alt="Home">
+            <div class="brand">ÇA PASSE CRÈME !</div>
+        </div>
         <nav>
             <ul>
-                <li data-page="info">About us</li>
-                <li data-page="contact">Find us</li>
+                <li data-page="info"><i class="fa-solid fa-mug-saucer"></i> About us</li>
+                <li data-page="contact"><i class="fa-solid fa-magnifying-glass"></i> Find us</li>
             </ul>
         </nav>
     </header>
     <main>
-        
+        <section id="intro">
+            <h1 class="brand">ÇA PASSE CRÈME !</h1> <!-- no es h1-->
+            <p>Cafe in Lausanne</p> <!--es h1-->
+            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">Slide 01</li>
+                          <li class="splide__slide">Slide 02</li>
+                          <li class="splide__slide">Slide 03</li>
+                      </ul>
+                </div>
+              </div>
+        </section>
+        <section id="info">
+            <h2>About us</h2>
+            <p>The best service, satisfied customers, delicious coffee from the most exotic countries and a wide range of drinks and desserts - that's all about us! Come to Ça Passe Crème and see for yourself. Wir warten auf Sie :)</p>
+        </section>
+        <section id="contact">
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="942" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=%C3%87A%20PASSE%20CR%C3%88ME%20!&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:942px;}</style><a href="https://www.embedgooglemap.net">google map responsive</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:942px;}</style></div></div>
+            <button class="instagram" href><i class="fa-brands fa-instagram"></i> Instagram</button>
+        </section>
     </main>
-    <footer>
-
-    </footer>
 </body>
 </html>

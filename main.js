@@ -9,3 +9,11 @@ document.querySelectorAll('nav li').forEach((listitem)=>{
         })
     });
 })
+
+document.addEventListener( 'DOMContentLoaded', function() {
+    const splide = new Splide( '.splide', {
+        type    : 'loop',
+        autoplay: true,
+    } );
+    splide.mount();
+});
