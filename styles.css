@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Gemosh;
+  src: url(fonts/Gemosh\ Headline\ Regular.ttf);
+}
 html {
   font-size: 20px;
 }
@@ -6,39 +10,44 @@ html {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-family: "Raleway", sans-serif;
   font-size: 1rem;
 }
 
 body {
-  color: #1f1f1f;
+  color: black;
   width: 100vw;
+  font-family: "Raleway", sans-serif;
+  background-color: #f1f1f1;
 }
 
-.brand {
-  color: #ec724c;
-}
-
+/*
+main{
+    width: 80%;
+}*/
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 1%;
+  padding: 10px 1.5%;
   box-shadow: 0px 0px 5px rgb(44, 44, 44);
+  background-color: #e9e2dc;
+  color: black;
 }
 header div {
   display: flex;
   align-items: center;
 }
 header div img {
-  height: 50px;
-  margin-right: 15px;
+  height: 3.5rem;
+  margin-right: 30px;
 }
 header div div {
-  font-size: 30px;
-  font-weight: 700;
-  font-style: italic;
-  text-decoration: double;
+  font-size: 3rem;
+  font-family: "Gemosh";
+  margin-top: 10px;
+  text-decoration: underline;
+  text-decoration-color: #c06122;
+  text-decoration-thickness: 3px;
 }
 header div:hover {
   cursor: pointer;
@@ -48,14 +57,37 @@ header ul {
 }
 header ul li {
   display: inline-block;
+  position: relative;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
   padding: 0px 2vw;
+  transition: 300ms;
+}
+header ul li:after {
+  content: "";
+  position: absolute;
+  width: 66%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -4px;
+  left: 17%;
+  background-color: #e97122;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 header ul li:hover {
   cursor: pointer;
-  color: #ED5223;
+  color: #e97122;
+}
+header ul li:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 header ul li i {
-  color: #ED5223;
+  color: #e97122;
+  font-size: 1rem;
+  margin-right: 5px;
 }
 
 #intro {
