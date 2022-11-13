@@ -76,20 +76,20 @@ header ul li:after {
   height: 2px;
   bottom: -4px;
   left: 17%;
-  background-color: #e97122;
+  background-color: #c06122;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
 header ul li:hover {
   cursor: pointer;
-  color: #e97122;
+  color: #ca6725;
 }
 header ul li:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 header ul li i {
-  color: #e97122;
+  color: #ca6725;
   font-size: 1rem;
   margin-right: 5px;
 }
@@ -103,7 +103,7 @@ h1 {
 }
 
 .heading {
-  color: #c06122;
+  color: #ca6725;
   font-weight: 900;
 }
 

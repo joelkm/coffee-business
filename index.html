@@ -3,15 +3,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="src/logo.png">
     <title>ÇA PASSE CRÈME !</title>
-    <script defer type="text/javascript" src="main.js"></script>
-    <script src="https://kit.fontawesome.com/b7d5dc159b.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/js/splide.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -30,17 +27,17 @@
         <section id="intro">
             <h1 class="heading">ÇA PASSE CRÈME !</h1> <!-- no es h1-->
             <p>Cafe in Lausanne</p> <!--es h1-->
-            <!--
-                <div class="splide" role="group" aria-label="Splide Basic HTML Example">
-                <div class="splide__track">
-                      <ul class="splide__list">
-                          <li class="splide__slide">Slide 01</li>
-                          <li class="splide__slide">Slide 02</li>
-                          <li class="splide__slide">Slide 03</li>
-                      </ul>
-                </div>
+            <div class="glide">
+                <section class="splide" aria-label="Splide Basic HTML Example" style="height: 500px;">
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                              <li class="splide__slide"><img src="src/logo.png" alt=""></li>
+                              <li class="splide__slide"><img src="src/logo.png" alt=""></li>
+                              <li class="splide__slide"><img src="src/logo.png" alt=""></li>
+                          </ul>
+                    </div>
+                </section>
             </div>
-            -->
         </section>
         <section id="info">
             <h2 class="heading">About us</h2>
@@ -54,5 +51,8 @@
             </div>
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://kit.fontawesome.com/b7d5dc159b.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>

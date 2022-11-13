@@ -84,20 +84,20 @@ header{
                 height: 2px;
                 bottom: -4px;
                 left: 17%;
-                background-color: $orange;
+                background-color: #c06122;
                 transform-origin: bottom right;
                 transition: transform 0.25s ease-out;
             }
             &:hover{
                 cursor: pointer;
-                color: $orange;
+                color: #ca6725;
             }
             &:hover:after {
                 transform: scaleX(1);
                 transform-origin: bottom left;
             }
             i{
-                color: $orange;
+                color: #ca6725;
                 font-size: 1rem;
                 margin-right: 5px;
             }
@@ -113,7 +113,7 @@ h1{
     font-size: 2rem;
 }
 .heading{
-    color: #c06122;
+    color: #ca6725;
     font-weight: 900;
 }
 
