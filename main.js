@@ -14,4 +14,4 @@ document.querySelectorAll('nav li').forEach((listitem)=>{
 document.addEventListener( 'DOMContentLoaded', function() {
     var splide = new Splide( '.splide' );
     splide.mount();
-  } );
+});

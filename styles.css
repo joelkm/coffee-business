@@ -21,6 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 main {
@@ -116,12 +117,27 @@ h2 {
   text-align: center;
 }
 
+.row-to-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.row-to-column div {
+  width: 30%;
+}
+
 #map {
   border: 1px solid rgb(216, 216, 216);
 }
 
 .instagram {
   margin-top: 20px;
+}
+
+@media (max-width: 1100px) {
+  html {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
