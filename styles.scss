@@ -5,6 +5,11 @@
     src: url(fonts/Gemosh\ Headline\ Regular.ttf);
 }
 
+@font-face {
+    font-family: Gnuolane;
+    src: url(fonts/gnuolane\ rg.otf);
+}
+
 //COLOR PALETTE
 $white: #ffffff;
 $orange: #e97122;
@@ -111,22 +116,23 @@ header{
     text-align: center;
 }
 h1{
-    font-size: 2.2rem;
+    font-size: 3rem;
     margin-top: 6rem;
 }
 .heading{
     color: #ca6725;
-    font-weight: 900;
+    font-family: 'Gnuolane';
 }
 
 h2{
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-align: center;
     margin-top: 10rem;
     margin-bottom: 20px;
 }
 h3{
     margin-top: 1rem;
+    font-size: 1.5rem;
 }
 
 .row-to-column{
@@ -206,6 +212,9 @@ h3{
     }
     section{
         margin-top: 50px;
+    }
+    main{
+        width: 70%;
     }
 
     #info{
