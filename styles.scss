@@ -176,7 +176,7 @@ h3{
 
 //ABOUT
 #info{
-    width: 50%;
+    width: 60%;
     margin: auto;
 }
 
@@ -185,21 +185,28 @@ h3{
     border: 1px solid rgb(216, 216, 216);
 }
 .instagram{
-    a{
-        border: 2px solid #ca25bc;
-        color: #ca25bc;
-        background-color: #ffffff;
-        border-radius: 999px;
-        font-size: 1.5rem;
-        text-decoration: none;
-        padding: 10px;
-        i{
-            font-size: 40px;
-        }
-        &:hover{
-
-        }
+    border: 2px solid #ca6725;
+    color: #ca6725;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 3px;
+    i{
+        font-size: 30px;
     }
+    &:hover{
+        background-color: #ca6725;
+        color: white;
+        border-color: rgb(83, 83, 83);
+    }
+}
+table {
+    border-collapse: separate;
+    border-spacing: 50px 0;
+  }
+  
+  td {
+    padding: 5px 0;
 }
 
 @media (max-width: 1400px){
@@ -213,15 +220,17 @@ h3{
     section{
         margin-top: 50px;
     }
-    main{
-        width: 70%;
-    }
 
-    #info{
-        p{
-            width: 100%;
-            margin: auto;
+    header{
+        div{
+            div{
+                display: none;
+            }
         }
+        nav{
+            display: none;
+        }
+        justify-content: center;
     }
 
     .splide{
@@ -232,6 +241,18 @@ h3{
     }
     .splide__arrow{
         display: none;
+    }
+
+    .row-to-column{
+        flex-direction: column;
+        justify-content: center;
+        div{
+            width: 100%;
+        }
+    }
+
+    #info{
+        width: 90%;
     }
 }
   
