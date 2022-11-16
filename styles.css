@@ -101,6 +101,7 @@ header ul li i {
 
 h1 {
   font-size: 2.2rem;
+  margin-top: 6rem;
 }
 
 .heading {
@@ -108,13 +109,15 @@ h1 {
   font-weight: 900;
 }
 
-section {
-  margin-top: 100px;
-}
-
 h2 {
   font-size: 1.2rem;
   text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 1rem;
 }
 
 .row-to-column {
@@ -128,6 +131,7 @@ h2 {
 
 .splide {
   height: 700px;
+  margin-top: 30px;
 }
 
 .splide__slide {
@@ -137,6 +141,7 @@ h2 {
   max-width: 100%;
   margin: auto;
   max-height: 100%;
+  border-radius: 7px;
 }
 
 .swipe {
@@ -158,6 +163,7 @@ h2 {
 }
 #info {
   width: 50%;
+  margin: auto;
 }
 
 #map {
