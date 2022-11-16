@@ -132,18 +132,62 @@ h2{
     flex-direction: row;
     justify-content: space-between;
     div{
-        width: 30%;
+        width: 45%;
     }
 }
 
+//INTRO
+.splide{
+    height: 700px;
+}
+
+.splide__slide{
+    width: 80vw;
+    img{
+        max-width: 100%;
+        margin: auto;max-height: 100%;
+    }
+}
+
+.swipe{
+    display: none;
+    animation-name: glow;
+    animation-duration:1s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    margin-top: 10px;
+}
+
+@keyframes glow{
+  from{opacity: 0.1;}
+  to{opacity: 0.3;}
+}
+
 //ABOUT
+#info{
+    width: 50%;
+}
 
 //CONTACT
 #map{
     border: 1px solid rgb(216, 216, 216);
 }
 .instagram{
-    margin-top: 20px;
+    a{
+        border: 2px solid #ca25bc;
+        color: #ca25bc;
+        background-color: #ffffff;
+        border-radius: 999px;
+        font-size: 1.5rem;
+        text-decoration: none;
+        padding: 10px;
+        i{
+            font-size: 40px;
+        }
+        &:hover{
+
+        }
+    }
 }
 
 @media (max-width: 1400px){
@@ -154,10 +198,28 @@ h2{
     html {
         font-size: 18px;
     }
+    section{
+        margin-top: 50px;
+    }
+
+    #info{
+        p{
+            width: 100%;
+            margin: auto;
+        }
+    }
+
+    .splide{
+        height: 70vw;
+    }
+    .swipe{
+        display: block;
+    }
+    .splide__arrow{
+        display: none;
+    }
 }
   
-  // Celulares 
-  
-  @media (max-width: 450px) {
+@media (max-width: 450px) {
     
-  }
+}
