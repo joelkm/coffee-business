@@ -72,6 +72,7 @@ header ul li {
   font-weight: 700;
   padding: 0px 2vw;
   transition: 300ms;
+  margin-top: 30px;
 }
 header ul li:after {
   content: "";
@@ -149,6 +150,11 @@ h3 {
   border-radius: 7px;
 }
 
+.splide__pagination {
+  padding: 0;
+  bottom: 1em;
+}
+
 .swipe {
   display: none;
   animation-name: glow;
@@ -195,10 +201,7 @@ h3 {
 table {
   border-collapse: separate;
   border-spacing: 50px 0;
-}
-
-td {
-  padding: 5px 0;
+  margin-left: -50px;
 }
 
 @media (max-width: 1100px) {
@@ -214,6 +217,9 @@ td {
   header div div {
     display: none;
   }
+  header div img {
+    margin-right: 0px;
+  }
   header nav {
     display: none;
   }
@@ -226,16 +232,68 @@ td {
   .splide__arrow {
     display: none;
   }
-  .row-to-column {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .row-to-column div {
-    width: 100%;
+  table {
+    border-spacing: 20px 0;
+    margin-left: -20px;
   }
   #info {
     width: 90%;
   }
+  #contact {
+    margin-bottom: 90px;
+  }
+}
+@media (max-width: 639px) {
+  h2 {
+    margin-top: 5rem;
+  }
+  .row-to-column {
+    flex-direction: column;
+    margin-inline: 20%;
+  }
+  .row-to-column div {
+    width: 100%;
+  }
+  .instagram {
+    font-size: 1rem;
+  }
+  .instagram i {
+    font-size: 20px;
+  }
+}
+footer {
+  box-shadow: 0px 0px 5px rgb(44, 44, 44);
+  background-color: #e9e2dc;
+  color: black;
+  height: 60px;
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  z-index: 9;
+}
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+footer ul li {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0px 2vw;
+  transition: 300ms;
+}
+footer ul li:hover {
+  cursor: pointer;
+  color: #ca6725;
+}
+footer ul li i {
+  color: #ca6725;
+  font-size: 1rem;
+  margin-right: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
