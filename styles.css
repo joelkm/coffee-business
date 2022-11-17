@@ -218,6 +218,7 @@ table {
   height: 100vh;
   z-index: 999;
   top: 0px;
+  transition: 200ms;
 }
 #preloader img {
   width: 25vw;

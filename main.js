@@ -3,7 +3,10 @@ const loader = document.getElementById("preloader")
 
 window.addEventListener("load", ()=>{
     setTimeout(()=>{
-        loader.style.display="none";
+        loader.style.opacity="0"
+    },1000)
+    setTimeout(()=>{
+        loader.style.display="none"
     },1500)
 })
 

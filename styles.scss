@@ -237,6 +237,7 @@ table {
         margin-top: 10px;
         animation-timing-function: linear;
     }
+    transition: 200ms;
 }
 @keyframes load{
     from{transform: rotate(0deg);}
