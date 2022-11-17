@@ -228,9 +228,14 @@ table {
   }
   .swipe {
     display: block;
+    margin-top: 20px;
   }
   .splide__arrow {
     display: none;
+  }
+  .splide__pagination {
+    padding: 0;
+    bottom: -1em;
   }
   table {
     border-spacing: 20px 0;
