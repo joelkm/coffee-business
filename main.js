@@ -2,7 +2,9 @@
 const loader = document.getElementById("preloader")
 
 window.addEventListener("load", ()=>{
-    loader.style.display="none";
+    setTimeout(()=>{
+        loader.style.display="none";
+    },1500)
 })
 
 //NAVIGATE ON CLICK

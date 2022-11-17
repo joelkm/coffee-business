@@ -194,7 +194,7 @@ h3{
     border-radius: 5px;
     font-size: 1.5rem;
     text-decoration: none;
-    padding: 3px 15px;
+    padding: 3px 0.2rem;
     transition: 500ms;
     i{
         font-size: 30px;
@@ -228,13 +228,14 @@ table {
     z-index: 999;
     top: 0px;
     img{
-        width: 30vw;
+        width: 25vw;
         position: absolute;
         animation-name: load;
-        animation-duration:1.5s;
+        animation-duration:1500ms;
         animation-iteration-count:infinite;
-        animation-direction:alternate;
+        animation-direction:normal;
         margin-top: 10px;
+        animation-timing-function: linear;
     }
 }
 @keyframes load{
@@ -333,6 +334,11 @@ table {
             }
         }
     }
+    #preloader{
+        img{
+            width: 35vw;
+        }
+    }
 }
   
 @media (max-width: 639px) {
@@ -355,5 +361,10 @@ table {
     }
     table {
         border-spacing: 20px 12px;
+    }
+    #preloader{
+        img{
+            width: 50vw;
+        }
     }
 }
