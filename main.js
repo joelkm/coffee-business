@@ -1,3 +1,10 @@
+//LOADER
+const loader = document.getElementById("preloader")
+
+window.addEventListener("load", ()=>{
+    loader.style.display="none";
+})
+
 //NAVIGATE ON CLICK
 document.querySelectorAll('nav li').forEach((listitem)=>{
     listitem.addEventListener('click', ()=>{
